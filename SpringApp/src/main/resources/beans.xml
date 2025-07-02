@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    <bean id="orderProcess" class="com.springcore.OrderProcess">
+        <property name="orderId" value="101"/>
+        <property name="order" ref="orderClass"/>
+        <property name="paymentMode" ref="creditCard"/>
+    </bean>
+    <bean id="orderClass" class="com.springcore.Order">
+        <constructor-arg name="productId" value="261213"/>
+        <constructor-arg name="productName" value="Juicer"/>
+        <constructor-arg name="productPrice" value="1999.00"/>
+    </bean>
+    <bean id="UPIPayment" class="com.springcore.UPI">
+        <constructor-arg name="phoneNumber" value="1234"/>
+        <constructor-arg name="name" value="Suraj Bhosale" />
+        <constructor-arg name="password" value="$261213" />
+    </bean>
+    <bean id="netBanking" class="com.springcore.NetBanking">
+        <constructor-arg name="userName" value="Suraj Bhosale"/>
+        <constructor-arg name="accountNumber" value="1234567890"/>
+        <constructor-arg name="bankName" value="HDFC Bank"/>
+        <constructor-arg name="phoneNumber" value="1234567890"/>
+    </bean>
+    <bean id="creditCard" class="com.springcore.CreditCard">
+        <property name="creditCardNo" value="1234567890"/>
+        <property name="bankName" value="ICICI Bank"/>
+        <property name="cardHolderName" value="Suraj Bhosale"/>
+        <property name="date" value=""/>
+    </bean>
+
+
+</beans>

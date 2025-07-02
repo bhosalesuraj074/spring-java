@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+<bean id="bankingOperation" class="com.springcore.collection.BankingOperation">
+    <constructor-arg>
+        <!--<set>
+            <ref bean="suraj" />
+            <ref bean="suraj2" />
+            <ref bean="sujal" />
+            <ref bean="marko" />
+            <ref bean="ailen" />
+            <ref bean="senthil" />
+            <ref bean="gayathri" />
+        </set>-->
+        <map>
+            <entry key="Suraj" value-ref="suraj"/>
+            <entry key="suraj2" value-ref="suraj2"/>
+            <entry key="sujal" value-ref="sujal"/>
+            <entry key="marko" value-ref="marko"/>
+            <entry key="ailen" value-ref="ailen"/>
+            <entry key="senthil" value-ref="senthil"/>
+            <entry key="gayathri" value-ref="gayathri"/>
+        </map>
+
+    </constructor-arg>
+</bean>
+    <bean id="suraj" class="com.springcore.collection.HDFCBank">
+        <constructor-arg value="bhosalesuraj074"/>
+        <constructor-arg value="suraj@12"/>
+        <constructor-arg value="Suraj"/>
+        <constructor-arg value="Bhosale"/>
+        <constructor-arg value="suraj@gmail.com"/>
+        <constructor-arg value="1234234435232343.09"/>
+    </bean>
+    <bean id="suraj2" class="com.springcore.collection.HDFCBank">
+        <constructor-arg value="bhosalesuraj074"/>
+        <constructor-arg value="suraj@12"/>
+        <constructor-arg value="Suraj"/>
+        <constructor-arg value="Bhosale"/>
+        <constructor-arg value="suraj@gmail.com"/>
+        <constructor-arg value="1234234435232343.09"/>
+    </bean>
+    <bean id="sujal" class="com.springcore.collection.ICICIBank">
+        <constructor-arg value="sujal"/>
+        <constructor-arg value="sujal@12"/>
+        <constructor-arg value="sujal"/>
+        <constructor-arg value="Bhosale"/>
+        <constructor-arg value="sujal.b@gmail.com"/>
+        <constructor-arg value="1234500023423234.09"/>
+    </bean>
+    <bean id="marko" class="com.springcore.collection.HDFCBank">
+        <constructor-arg value="marko"/>
+        <constructor-arg value="marko@12"/>
+        <constructor-arg value="marko"/>
+        <constructor-arg value="m"/>
+        <constructor-arg value="marko.m@gmail.com"/>
+        <constructor-arg value="123234.09"/>
+    </bean>
+    <bean id="ailen" class="com.springcore.collection.HDFCBank">
+        <constructor-arg value="Ailen"/>
+        <constructor-arg value="ailen@12"/>
+        <constructor-arg value="ailen"/>
+        <constructor-arg value="b"/>
+        <constructor-arg value="ailen.b@gmail.com"/>
+        <constructor-arg value="123234.09"/>
+    </bean>
+    <bean id="senthil" class="com.springcore.collection.ICICIBank">
+        <constructor-arg value="Senthil"/>
+        <constructor-arg value="senthil@12"/>
+        <constructor-arg value="senthil"/>
+        <constructor-arg value="t"/>
+        <constructor-arg value="senthil.t@gmail.com"/>
+        <constructor-arg value="345353.09"/>
+    </bean>
+    <bean id="gayathri" class="com.springcore.collection.ICICIBank">
+        <constructor-arg value="Gayathri"/>
+        <constructor-arg value="gayathri@12"/>
+        <constructor-arg value="gayatri"/>
+        <constructor-arg value="k"/>
+        <constructor-arg value="gayathri.k@gmail.com"/>
+        <constructor-arg value="34534059.09"/>
+    </bean>
+</beans>
