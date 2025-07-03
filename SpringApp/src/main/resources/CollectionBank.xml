@@ -5,7 +5,8 @@
  http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 <bean id="bankingOperation" class="com.springcore.collection.BankingOperation">
     <constructor-arg>
-        <!--<set>
+
+        <!-- <list> or  <set>
             <ref bean="suraj" />
             <ref bean="suraj2" />
             <ref bean="sujal" />
@@ -13,7 +14,7 @@
             <ref bean="ailen" />
             <ref bean="senthil" />
             <ref bean="gayathri" />
-        </set>-->
+        </list> or </set>-->
         <map>
             <entry key="Suraj" value-ref="suraj"/>
             <entry key="suraj2" value-ref="suraj2"/>
