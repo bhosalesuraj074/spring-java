@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<context:annotation-config/>-->
+    <context:component-scan base-package="com.springcore"/>
+    <bean id="booking" class="com.springcore.booking.BookingService" >
+        <!--<constructor-arg ref="flight" />-->
+    </bean>
+
+   <!-- <bean id="train" class="com.springcore.booking.Train">
+       &lt;!&ndash; <constructor-arg value="Train"/>&ndash;&gt;
+    </bean>
+
+    <bean id="flight" class="com.springcore.booking.Flight" >
+       &lt;!&ndash; <constructor-arg value="Flight"/>&ndash;&gt;
+    </bean>-->
+</beans>

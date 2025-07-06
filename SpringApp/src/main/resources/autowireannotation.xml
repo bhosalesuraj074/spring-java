@@ -11,11 +11,11 @@
 
     </bean>
 
-    <bean id="employee" class="com.springcore.annotation.Employee">
+    <bean id="employee" class="com.springcore.annotation.Employee" >
         <property name="id" value="101" />
         <property name="name" value="Suraj" />
     </bean>
-    <bean id="student" class="com.springcore.annotation.Student" autowire="byName">
+    <bean id="student" class="com.springcore.annotation.Student" >
         <property name="studentId" value="1" />
         <property name="name" value="Suraj" />
     </bean>
