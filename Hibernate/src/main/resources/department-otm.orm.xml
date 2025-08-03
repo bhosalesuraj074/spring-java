@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.onetomany.Department">
+        <id name="id" column="Department_Id">
+        <generator class="increment" />
+        </id>
+        <property name="departmentName" column="DepartmentName" />
+        <set name="employees" table="Employees">
+            <key column="Department_Id"/>
+            <one-to-many class="com.onetomany.Employee"/>
+        </set>
+
+    </class>
+</hibernate-mapping>

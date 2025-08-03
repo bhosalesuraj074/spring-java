@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.billing">
+    <meta attribute="class-description">
+        This class contains the Bank Account detail.
+    </meta>
+    <class name="com.billing.BillingDetails" table="Billing_types" discriminator-value="BD">
+        <id name="id" column="BANK_ACCOUNT_ID">
+         <generator class="uuid"/>
+        </id>
+<!--        <discriminator column="BILLING_DETAILS_TYPE" />-->
+
+        <property name="owner" column="BANK_OWNER_NAME" />
+        <property name="mobileNumber" column="MOBILE_NUMBER" />
+        <property name="date" column="BANK_DATE" />
+
+        <subclass name="com.billing.BankDetails" discriminator-value="Bank-Account" >
+           <property name="bankName" column="BANK_NAME" />
+            <property name="accountNumber" column="ACCOUNT_NUMBER"/>
+        </subclass>
+
+        <subclass name="com.billing.CreditCard" discriminator-value="Credit-card">
+            <property name="type" column="Payment_type" />
+            <property name="expMonth" column="Expiry_month" />
+            <property name="expYear" column="Expiry_year"/>
+        </subclass>
+    </class>
+</hibernate-mapping>

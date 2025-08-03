@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hibernate.Vehicle" table="Vehicle">
+        <id name="vehicleId" column="VEHICLE_ID">
+            <generator class="uuid"/>
+        </id>
+        <property name="model" column="CAR_MODEL" type="java.lang.String"/>
+        <property name="vehicleName" column="VEHICLE_NAME"/>
+        <property name="year" column="YEAR"/>
+        <property name="price" column="PRICE" type="java.lang.Double"/>
+    </class>
+</hibernate-mapping>

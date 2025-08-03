@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <meta attribute="class-description">
+        This class contains the Credit card Account detail.
+    </meta>
+    <class name="com.billing.CreditCard" table="CREDIT_CARD">
+        <id name="id" column="BANK_ACCOUNT_ID">
+            <generator class="uuid"/>
+        </id>
+        <property name="owner" column="CC_OWNER_NAME" />
+        <property name="number" column="MOBILE_NUMBER" />
+        <property name="date" column="ISSUE_DATE" />
+        <property name="type" column="CC_PAYMENT_TYPE"/>
+        <property name="expMonth" column="CC_EXPIRY_MONTH" />
+        <property name="expYear" column="CC_EXPIRY_YEAR" />
+    </class>
+</hibernate-mapping>

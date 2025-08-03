@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+    <class name="com.address.User" table="User">
+        <id name="id" column="user_id" >
+            <generator class="uuid"/>
+        </id>
+        <property name="firstName" column="first_name"/>
+        <property name="lastName" column="last_name"/>
+        <property name="username" column="UserName"/>
+        <property name="password" column="Password"/>
+
+        <component name="homeAddress" class="com.address.Address">
+<!--            <parent name="user"/>-->
+            <property name="street" column="HOME_STREET_NAME" type="java.lang.String"/>
+            <property name="city" column="HOME_CITY_NAME" type="java.lang.String"/>
+            <property name="zipcode" column="HOME_ZIP_CODE" type="java.lang.Integer"/>
+        </component>
+        <component name="officeAddress" class="com.address.Address">
+<!--            <parent name="user"/>-->
+            <property name="street" column="OFFICE_STREET_NAME" type="java.lang.String" not-null="true"/>
+            <property name="city" column="OFFICE_CITY_NAME" type="java.lang.String" not-null="true"/>
+            <property name="zipcode" column="OFFICE_ZIP_CODE" type="java.lang.Integer" not-null="true"/>
+        </component>
+    </class>
+</hibernate-mapping>

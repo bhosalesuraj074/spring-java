@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.onetoone.Address" table="Address">
+        <id name="id" column="Address_Id" >
+            <generator class="sequence"/>
+        </id>
+        <property name="city" column="CITY"/>
+        <property name="state" column="STATE" />
+    </class>
+</hibernate-mapping>

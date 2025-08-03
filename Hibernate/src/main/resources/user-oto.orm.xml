@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.onetoone.User" table="USER">
+         <id name="id" column="User_ID">
+             <generator class="sequence"/>
+         </id>
+        <property name="userName" column="USER_NAME" />
+        <one-to-one name="Address" class="com.onetoone.Address" cascade="all"/>
+    </class>
+
+</hibernate-mapping>

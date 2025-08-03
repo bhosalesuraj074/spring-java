@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "*-//Hibernate/Hibernate Mapping OTD 5.3//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.manttomany.Course" table="Courses">
+    <id name="id" column="Course_Id">
+        <generator class="sequence" />
+    </id>
+    <property name="title" column="Subject_Name" />
+    <set name="students" table="student_course" cascade="all" inverse="true" >
+        <key column="course_id" />
+        <many-to-many column="student_id" class="com.manttomany.Student"/>
+    </set>
+</class>
+</hibernate-mapping>
