@@ -1,0 +1,232 @@
+1.
+    {
+        "name": "Bisleri",
+        "manufactured": {
+            "companyName": "Bisleri International Pvt. Ltd.",
+            "houseNo": "456",
+            "street": "Bisleri House",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "pinCode": "400099"
+        },
+        "packSize": [
+            {
+                "size": "500ml",
+                "price": 10.00
+            },
+            {
+                "size": "1L",
+                "price": 20.00
+            },
+            {
+                "size": "2L",
+                "price": 35.00
+            }
+        ],
+        "contactDetails": {
+            "companyName": "Bisleri International Pvt. Ltd.",
+            "houseNo": "456",
+            "street": "Bisleri House",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "pinCode": "400099",
+            "email": "contact@bisleri.com"
+        },
+        "aboutProduct": {
+            "eanCode": "8901004010115",
+            "country": "India",
+            "fssaiNo": "10012022000030",
+            "expiryDate": "2025-05-20",
+            "disclaimer": "Naturally sourced mineral water."
+        },
+        "productInfo": {
+            "info": "Zero calories, no added sugars."
+        }
+    }
+
+
+2.
+
+
+{
+    "name": "Kinley",
+    "manufactured": {
+        "companyName": "Coca-Cola India Pvt. Ltd.",
+        "houseNo": "789",
+        "street": "Kinley Street",
+        "city": "Gurgaon",
+        "state": "Haryana",
+        "country": "India",
+        "pinCode": "122001"
+    },
+    "packSize": [
+        {
+            "size": "600ml",
+            "price": 12.00
+        },
+        {
+            "size": "2L",
+            "price": 30.00
+        }
+    ],
+    "contactDetails": {
+        "companyName": "Coca-Cola India Pvt. Ltd.",
+        "houseNo": "789",
+        "street": "Kinley Street",
+        "city": "Gurgaon",
+        "state": "Haryana",
+        "country": "India",
+        "pinCode": "122001",
+        "email": "info@cocacola.in"
+    },
+    "aboutProduct": {
+        "eanCode": "8901764023604",
+        "country": "India",
+        "fssaiNo": "10012011000007",
+        "expiryDate": "2025-06-15",
+        "disclaimer": "Purified drinking water."
+    },
+    "productInfo": {
+        "info": "TDS: 150-250 ppm."
+    }
+}
+
+
+
+3.
+{
+    "name": "Himalayan",
+    "manufactured": {
+        "companyName": "NourishCo Beverages Limited",
+        "houseNo": "101",
+        "street": "Himalayan Way",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "pinCode": "110001"
+    },
+    "packSize": [
+        {
+            "size": "1L",
+            "price": 50.00
+        },
+        {
+            "size": "750ml",
+            "price": 40.00
+        }
+    ],
+    "contactDetails": {
+        "companyName": "NourishCo Beverages Limited",
+        "houseNo": "101",
+        "street": "Himalayan Way",
+        "city": "Delhi",
+        "state": "Delhi",
+        "country": "India",
+        "pinCode": "110001",
+        "email": "support@nourishco.com"
+    },
+    "aboutProduct": {
+        "eanCode": "8901048030026",
+        "country": "India",
+        "fssaiNo": "10012012000057",
+        "expiryDate": "2025-10-10",
+        "disclaimer": "Natural mineral water from the Himalayas."
+    },
+    "productInfo": {
+        "info": "Rich in natural minerals."
+    }
+}
+
+
+
+4.
+{
+    "name": "Evian",
+    "manufactured": {
+        "companyName": "Danone",
+        "houseNo": "202",
+        "street": "Route de la Source",
+        "city": "Evian-les-Bains",
+        "state": "Auvergne-Rhône-Alpes",
+        "country": "France",
+        "pinCode": "74500"
+    },
+    "packSize": [
+        {
+            "size": "330ml",
+            "price": 60.00
+        },
+        {
+            "size": "750ml",
+            "price": 120.00
+        }
+    ],
+    "contactDetails": {
+        "companyName": "Danone",
+        "houseNo": "202",
+        "street": "Route de la Source",
+        "city": "Evian-les-Bains",
+        "state": "Auvergne-Rhône-Alpes",
+        "country": "France",
+        "pinCode": "74500",
+        "email": "contact@evian.com"
+    },
+    "aboutProduct": {
+        "eanCode": "3068320000067",
+        "country": "France",
+        "fssaiNo": "10014022003153",
+        "expiryDate": "2026-01-01",
+        "disclaimer": "Sourced from the French Alps."
+    },
+    "productInfo": {
+        "info": "Naturally filtered mineral water."
+    }
+}
+
+
+5.
+
+{
+    "name": "Aquafina",
+    "manufactured": {
+        "companyName": "Pepsico",
+        "houseNo": "123",
+        "street": "Main St",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "pinCode": "10001"
+    },
+    "packSize": [
+        {
+            "size": "250ml",
+            "price": 8.00
+        },
+        {
+            "size": "5L",
+            "price": 80.00
+        }
+    ],
+    "contactDetails": {
+        "companyName": "Pepsico",
+        "houseNo": "123",
+        "street": "Main St",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA",
+        "pinCode": "10001",
+        "email": "contact@pepsico.com"
+    },
+    "aboutProduct": {
+        "eanCode": "1234567890123",
+        "country": "USA",
+        "fssaiNo": "12345678901234",
+        "expiryDate": "2024-12-31",
+        "disclaimer": "Store in a cool, dry place."
+    },
+    "productInfo": {
+        "info": "0 calories, 0 carbs."
+    }
+}
